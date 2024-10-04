@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Market Data WebSocket</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Binance Market Data WebSocket</h1>
+        <div class="controls">
+            <label for="coinSelector">Select Cryptocurrency:</label>
+            <select id="coinSelector">
+                <option value="ethusdt">ETH/USDT</option>
+                <option value="bnbusdt">BNB/USDT</option>
+                <option value="dotusdt">DOT/USDT</option>
+            </select>
+
+            <label for="timeframeSelector">Select Timeframe:</label>
+            <select id="timeframeSelector">
+                <option value="1m">1 Minute</option>
+                <option value="3m">3 Minutes</option>
+                <option value="5m">5 Minutes</option>
+            </select>
+        </div>
+        <canvas id="candlestickChart" width="1200" height="600"></canvas> <!-- Increase width and height -->
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
