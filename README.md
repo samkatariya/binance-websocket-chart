@@ -21,5 +21,5 @@ This project is a real-time candlestick chart application that connects to the B
 To run this project locally, clone the repository and open `index.html` in your browser.
 
 ```bash
-git clone https://github.com/<USERNAME>/binance-websocket-chart.git
+git clone https://github.com/samkatariya/binance-websocket-chart.git
 cd binance-websocket-chart
